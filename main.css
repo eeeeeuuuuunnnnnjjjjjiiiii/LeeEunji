@@ -1,76 +1,119 @@
-/*header*/
-@font-face {
-    font-family: 'TTWanjudaedunsancheB';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
+body{
+    margin: 0;
+    padding: 0;
 }
-.header{
-    background-color: rgba(0,0,0,0);
-    width: 100%;
-    height:70px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-
-}
-
-.logo{
-    background-image: url(img/LEEEUNJI-LOGO.png);
-    width: 300px;
-    height: 50px;
-    
-}
-.menu-container{
-    position: absolute;
-    right: 100px;
-    display: flex;
-}
-.menu{
-    font-family: 'TTWanjudaedunsancheB';
-    font-weight: bold;
-    width: 100px;
-    margin-left: 30px;
-    float: left;
-   
-}
-li,a{
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    display: flex;
-}
-
 /*main*/
+section{
+    width: 100%;
+    border-bottom: 2px dashed #ceb8b8;
+    padding: 100px 0;
+}
 .container{
     width:100%;
     position: relative;
     justify-content: center;
 }
+.typeit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.typed-text {
+    color: burlywood;
+    font-size: 2.25em;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 5px;
+    height: 30px;
+    margin-left: 5px;
+    background: #ff9100;
+  }
+  .cursor.blink {
+    animation: blink 0.9s ease-in-out infinite;
+  }
+  @keyframes blink {
+    0%, 100% {
+      background: #ff9100;
+    }
+    40%, 50% {
+      background: transparent;
+    }
+  }/*# sourceMappingURL=style.css.map */
 .about{
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
+    padding: 0 !important;
+    min-height: 1150px;
 }
 .about-inner{
-    height:500px;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+#introduction{
+    text-align: center;
+    height: 100%;
+    margin: 20px;
+    padding:50px;
+    margin: 0 auto;
+}
+#introduction p{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
 }
 #profile{
     border: 2px solid lightgray;
-    box-shadow: dimgray;
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,.25);
+}
+#profile h2{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.profile-inner{  
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 .profile-img{
-    background-image: url(https://search.pstatic.net/sunny/?src=https%3A%2F%2Fthumb10.iclickart.co.kr%2FThumb10%2F15080000%2F15074176.jpg&type=a340);
+    background-image: url(img/eunbok.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 50%;
     width: 300px;
     height: 400px;
     display: flex;
     float: left;
-    margin: 10px 150px 20px 30px;
 }
 .profile-list{
-    width: 500px;
-    height: 300px;
     float: left;
     font-size: larger;
     font-weight: bold;
+}
+.profile-list li{
+    margin:20px;
+}
+.profile-inner li span:hover{
+    color: burlywood;
+    cursor: pointer;
+}
+
+/*skill*/
+.skill{
+    width: 75%;
+    margin: 0 auto;
+}
+/*projects*/
+.projects{
+
+}
+/*contact*/
+.contact{
+    border: none;
 }
