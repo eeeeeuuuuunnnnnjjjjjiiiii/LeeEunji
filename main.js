@@ -4,6 +4,12 @@
         $("#footer").load("footer.html");
     });
 
+    function goToScroll(name) {
+      var location = document.querySelector("." + name).offsetTop;
+      window.scrollTo({top: location, behavior: 'smooth'});
+      }
+
+
     //text-animation
     // Set the time intervals for typing each character and erasing the previous character in milliseconds
 const typeNextCharAfter = 90;
