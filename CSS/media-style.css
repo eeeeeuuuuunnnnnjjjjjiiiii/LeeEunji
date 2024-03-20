@@ -1,4 +1,5 @@
 /* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/ 
+
 @media all and (min-width:1025px) and (max-width:1279px) { 
     body{
         margin: 0;
@@ -357,6 +358,94 @@
   
   /* 모바일 세로 (해상도 ~ 479px)*/ 
   @media all and (max-width:479px) {
-    
+    html{
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+    }
+    .container{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    section{
+        width: 99% !important;
+        min-height: auto !important;
+        padding: 10px;
+    }
+    #introduction{
+        padding: 5px;
+        width: 99%;
+    }
+    #introduction p{
+        font-size: 1rem;
+        margin: 5px;
+        text-align: right;
+    }
+    .about-inner{
+        margin-top: 10px;
+        width: 95%;
+        height: auto;
+    }
+    h2{
+        font-size: 1.25rem;
+        margin: 10px !important;
+        padding: 0 !important;
+    }
+    .profile-img{
+        display: none;
+    }
+    .profile li{
+        margin: 10px;
+    }
+    .profile-list{
+        font-size: 1rem;
+
+    }
+    .profile-list ul{
+        margin: 0 auto;
+        padding: 0;
+
+    }
+    .border-bottom{
+        border-bottom: 2px dashed #ceb8b8;
+    }
+    .profile-list ul li{
+        margin: 7px;
+        padding: 0;
+    }
+    .chart{
+        width: 90%;
+        margin: 0 auto;
+        padding: 5px;
+        border: none;
+        /* border-radius: 10px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bar-container{
+        margin-bottom: 5px;
+    }
+    .label{
+        font-size: 1rem;
+    }
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-auto-rows: 270px; */
+        /* grid-gap: 50px; */
+        padding: 20px;
+        width: fit-content;
+        margin: 0 auto;
+        height: max-content;
+    }
+    .footer-text {
+        text-align: right;
+        z-index: 99;
+        float: right;
+        right: 1%;
+        bottom: 1%;
   }
-  
+}
