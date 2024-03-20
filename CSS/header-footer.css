@@ -133,3 +133,9 @@ button{
         bottom: 5%;
     }
 }
+  /* 모바일 세로 (해상도 ~ 479px)*/ 
+  @media all and (max-width:479px) {
+    .menu-container ul{
+        display: none !important;
+    }
+}

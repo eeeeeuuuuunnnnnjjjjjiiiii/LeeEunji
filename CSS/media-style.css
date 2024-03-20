@@ -363,6 +363,8 @@
         margin: 0;
         width: 100%;
     }
+    header .menu-container{
+        display: none;}
     .container{
         padding: 0;
         margin: 0;
@@ -382,6 +384,13 @@
         font-size: 1rem;
         margin: 5px;
         text-align: right;
+    }
+    .typeit{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
     }
     .about-inner{
         margin-top: 10px;
