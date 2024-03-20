@@ -377,13 +377,13 @@
         padding: 10px;
     }
     #introduction{
-        padding: 5px;
-        width: 99%;
+        padding: 0;
+        width: 90%;
     }
     #introduction p{
-        font-size: 1rem;
+        font-size: 0.85rem;
         margin: 5px;
-        text-align: right;
+        text-align: center;
     }
     .typeit{
         display: flex;
@@ -394,7 +394,8 @@
     }
     .about-inner{
         margin-top: 10px;
-        width: 95%;
+        padding: 0;
+        width: 90%;
         height: auto;
     }
     h2{
