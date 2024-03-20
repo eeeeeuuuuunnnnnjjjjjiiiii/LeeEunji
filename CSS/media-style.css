@@ -359,7 +359,7 @@
   /* 모바일 세로 (해상도 ~ 479px)*/ 
   @media all and (max-width:479px) {
     html{
-        padding: 10px;
+        padding: 0;
         margin: 0;
         width: 100%;
     }
