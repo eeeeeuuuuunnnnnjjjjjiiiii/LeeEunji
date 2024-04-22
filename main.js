@@ -20,7 +20,7 @@ const cursorStartsErasingAfter = 2000;
 // Array of strings to be displayed one at a time
 const textArray = [
   "안녕하십니까 :)",
-  "Frontend 개발자 이은지 입니다.",
+  "웹개발자 이은지 입니다.",
 ];
 
 // Select the HTML elements for the typed text and cursor
