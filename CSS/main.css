@@ -101,8 +101,8 @@ section{
 .profile-list li{
     margin:20px;
 }
-.profile-inner li span:hover{
-    color: burlywood;
+a:hover{
+    color:#ff9100;
     cursor: pointer;
 }
 .icon{
