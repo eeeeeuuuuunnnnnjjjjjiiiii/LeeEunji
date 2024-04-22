@@ -1,0 +1,145 @@
+/*header*/
+@font-face {
+    font-family: 'TTWanjudaedunsancheB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (min-width: 1025px) {
+.header{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo{
+    background-image: url(../img/logo.PNG);
+    width: 140px;
+    height: 50px;
+    
+}
+.menu-container{
+    position: absolute;
+    right: 100px;
+    display: flex;
+}
+.menu{
+    font-family: 'TTWanjudaedunsancheB';
+    font-weight: bold;
+    width: 100px;
+    margin-left: 30px;
+    float: left;
+   
+}
+.menu>button:hover{
+    cursor: pointer;
+    color: #ff9100;;
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+button{
+    border: none;
+    background: none;
+    font-family: 'InkLipquid';
+    font-weight: bold;
+    width: 100px;
+    margin-left: 30px;
+    float: left;
+    font-size: 1rem;
+    color: black;
+}
+
+/*footer*/
+.footer{
+    height: 50px;
+    width: 100%;
+}
+.footer-text{
+    position: relative;
+    z-index: 99;
+    float: right;
+    right: 5%;
+    bottom: 5%;
+}
+}
+@media screen and (max-width: 1024px) {
+    .header{
+        background-color: white;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+    }
+    .logo{
+        background-image: url(../img/logo.PNG);
+        width: 140px;
+        height: 50px;
+        
+       margin-left: 20px;
+    }
+    .menu-container{
+        position: absolute;
+        right: 100px;
+        display: flex;
+    }
+    .menu{
+        font-family: 'TTWanjudaedunsancheB';
+        font-weight: bold;
+        width: 100px;
+        margin-left: 30px;
+        float: left;
+       
+    }
+    li,a{
+        list-style: none;
+        text-decoration: none;
+        color: black;
+        display: flex;
+    }
+    button{
+        border: none;
+        background: none;
+        font-family: 'TTWanjudaedunsancheB';
+        font-weight: bold;
+        width: 100px;
+        margin-left: 30px;
+        float: left;
+        font-size: 1rem;
+    }
+    
+    /*footer*/
+    .footer{
+        height: 50px;
+        width: 100%;
+    }
+    .footer-text{
+        position: relative;
+        z-index: 99;
+        float: right;
+        right: 5%;
+        bottom: 5%;
+    }
+}
+  /* 모바일 세로 (해상도 ~ 479px)*/ 
+  @media all and (max-width:479px) {
+    .menu-container ul{
+        display: none !important;
+    }
+}

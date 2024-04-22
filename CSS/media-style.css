@@ -1,0 +1,478 @@
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/ 
+
+@media all and (min-width:1025px) and (max-width:1279px) { 
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    /*main*/
+    section{
+        width: 100%;
+        border-bottom: 2px dashed #ceb8b8;
+        padding: 100px 0;
+    }
+    .container{
+        width:100%;
+        position: relative;
+        justify-content: center;
+    }
+    .typeit{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .typed-text {
+        color: burlywood;
+        font-size: 1.5rem;
+      }
+      
+      .cursor {
+        display: inline-block;
+        width: 5px;
+        height: 30px;
+        margin-left: 5px;
+        background: #ff9100;
+      }
+      .cursor.blink {
+        animation: blink 0.9s ease-in-out infinite;
+      }
+      @keyframes blink {
+        0%, 100% {
+          background: #ff9100;
+        }
+        40%, 50% {
+          background: transparent;
+        }
+      }/*# sourceMappingURL=style.css.map */
+    .about{
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 100px !important;
+        min-height: 1150px;
+    }
+    .about-inner{
+        height: 600px;
+        width: 80%;
+        margin: 0 auto;
+    
+    }
+    #introduction{
+        text-align: center;
+        height: 100%;
+        margin: 20px;
+        padding:50px;
+        margin: 0 auto;
+    }
+    #introduction p{
+        font-size: 20px;
+        font-weight: 400;
+        margin: 10px;
+    }
+    #profile{
+        border: 2px solid lightgray;
+        box-shadow: 1px 1px 8px 1px rgba(0,0,0,.25);
+    }
+    #profile h2{
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    .profile-inner{  
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .profile-img{
+        background-image: url(../img/eunbok.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        float: left;
+    }
+    .profile-list{
+        float: left;
+        font-size: larger;
+        font-weight: bold;
+    }
+    .profile-list li{
+        margin:20px;
+    }
+    .profile-inner li span:hover{
+        color: burlywood;
+        cursor: pointer;
+    }
+    .icon{
+        margin: 5px 10px;
+    }
+    /*skill*/
+    .skill{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .chart {
+        border: 3px solid #ff9100;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0 auto;
+        padding: 50px;
+        width: 80%;
+        margin-top: 50px;
+    }
+    
+    .bar-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* 항목과 막대 간의 간격 */
+    }
+    
+    .label {
+        width: 120px;
+        font-size: 1.25rem;
+        margin-right: 40px;
+    }
+    
+    .bar {
+        border: 1px solid #32a1ce;
+        border-radius: 5px;
+        height: 30px; /* 막대 너비 */
+        width: 100%;
+    
+        
+    }
+    .bar-percent{
+        display: flex;
+        background-color: #280274;
+        height: 30px;
+        align-items: center;
+        border-radius: 0 15px 15px 0;
+    }
+    .percent{
+        text-align: right;
+        width: 100%;
+        color: white;
+        font-size: 17px;
+        margin-right: 10px;
+    }
+    /*projects*/
+    .projects{
+        width: 75%;
+        margin: 0 auto;
+        border: none;
+    }
+    .flipBtn{
+        float: right;
+        display: none;
+    }
+    .filp-all{
+        width: 130px;
+        height: 40px;
+        padding: 10px 25px;
+        border: 2px solid #280274;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+    .filp-all:hover {
+        box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+     }
+     .projects-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 300px;
+        grid-gap: 60px;
+        padding: 24px;
+        width: 100%;
+     }
+    .card{
+        display:grid;
+        width: 252.2px;
+        height: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 8px solid white;
+        position: relative;
+    
+        box-shadow: 1px 1px 8px 1px rgba(0,0,0,.18);
+    }
+    .card:nth-child(5){
+        margin-right:0;
+    }
+    .card-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .card-body{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right:-100%;
+        position: absolute;
+        background: #273e49;
+        overflow: hidden;
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 1s;
+    }
+    .card:hover .card-body{
+        right: 0;
+    }
+    .card-title{
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 500;
+        padding-left: 10px;
+    }
+    .card-sub-title{
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 300;
+        padding-left: 10px;
+    }
+    .card-info{
+        font-size:16px;
+        line-height: 25px;
+        margin: 20px 0;
+        font-weight: 400;
+        padding-left: 10px;
+    }
+    .card-btn{
+        color: #273e49;
+        background: #8fabba;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-transform: capitalize;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        cursor: pointer;
+        width: 120px;
+        margin-left: 10px;
+    }
+    
+} 
+  
+  /* 테블릿 가로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1024px) { 
+    main {
+        margin: 0;
+        padding: 0;
+    }
+    section{
+        width: 90% !important;
+        min-height: fit-content !important;
+    }
+    #introduction{
+        padding: 0;
+        margin: 0 auto;
+    }
+    .about-inner{
+        width: 95%;
+        height:auto;
+        margin-top: 40px;
+    }
+    .about-inner p{
+        font-size: 0.7rem;
+        
+    }
+    .profile-inner{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .profile-img{
+        background: url(../img/eunbok.jpg);
+        width: 300px;
+        margin: 15px;
+        background-size: cover;
+        
+    }
+    .profile-list{
+        width: 300px;
+        font-size: 1em;     
+    }
+    .profile-list li,ul{
+        width: max-content;
+        padding: 7px;
+        margin: 7px;
+    }
+    .profile-list > ul > li > a > span{
+        display: none;
+    }
+    .icon{
+        margin: 3px 5px 0 0;
+    }
+    .label{
+        width: 130px;
+        font-size: 1.25rem;
+        margin-right: 40px;
+    }  
+    .projects{
+        height: fit-content;
+    }
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
+        grid-gap: 24px;
+        padding: 0;
+        width: 100%;
+    }
+    .card{
+        display: grid;
+        width: fit-content;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 5px solid white;
+        position: relative;
+        box-shadow: 1px 1px 8px 1px rgba(0,0,0,.18);
+    }
+}
+ /* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
+ @media all and (min-width:480px) and (max-width:767px) {
+    
+  } 
+  
+  /* 모바일 세로 (해상도 ~ 479px)*/ 
+  @media all and (max-width:479px) {
+    html{
+        padding: 0px;
+        margin: 0;
+        width: 100%;
+    }
+    header .menu-container{
+        display: none;}
+    .container{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    section{
+        width: 100% !important;
+        min-height: auto !important;
+    }
+    #introduction{
+        padding: 5px;
+        width: 98%;
+    }
+    #introduction p{
+        font-size: 0.75rem;
+        margin: 5px;
+        text-align: right;
+    }
+    .typeit{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .about-inner{
+        margin-top: 10px;
+        width: 95%;
+        height: auto;
+    }
+    h2{
+        font-size: 1.25rem;
+        margin: 10px !important;
+        padding: 0 !important;
+    }
+    .profile-img{
+        display: none;
+    }
+    .profile li{
+        margin: 10px;
+    }
+    .profile-list{
+        font-size: 1rem;
+
+    }
+    .profile-list ul{
+        margin: 0 auto;
+        padding: 0;
+
+    }
+    .border-bottom{
+        border-bottom: 2px dashed #ceb8b8;
+    }
+    .profile-list ul li{
+        margin: 7px;
+        padding: 0;
+    }
+    .chart{
+        width: 90%;
+        margin: 0 auto;
+        padding: 5px;
+        border: none;
+        /* border-radius: 10px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bar-container{
+        margin-bottom: 5px;
+    }
+    .label{
+        font-size: 1rem;
+    }
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-auto-rows: 220px;
+        grid-gap: 18px;
+        padding: 10px;
+        width: fit-content;
+        margin: 0 auto;
+        height: max-content;
+    }
+    .card{
+    display: grid;
+    width: 160px;
+    height: 210px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 8px solid white;
+    position: relative;
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,.18);
+    }
+    .card-title{
+        font-size: 1rem;
+    }
+    .card-sub-title{
+        font-size: 0.7rem;
+    }
+    .card-info{
+        font-size: 0.5rem;
+    }
+    .footer-text {
+        text-align: right;
+        z-index: 99;
+        float: right;
+        right: 1%;
+        bottom: 1%;
+  }
+}
